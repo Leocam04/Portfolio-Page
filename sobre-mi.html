@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre mí — CRAZY</title>
+  <meta name="description"
+    content="Conoce a CRAZY: community manager, estratega de marketing y productora audiovisual." />
+  <meta property="og:title" content="Sobre mí — CRAZY" />
+  <meta property="og:description" content="La historia y el método detrás de cada proyecto." />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ================= CABECERA ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">(nombre)</a>
+
+      <nav class="label desktop-nav" aria-label="Navegación principal">
+        <a href="proyectos.html" class="link-line">Proyectos</a>
+        <a href="servicios.html" class="link-line">Servicios</a>
+        <a href="sobre-mi.html" class="link-line active">Sobre mí</a>
+        <a href="contacto.html" class="link-line">Contacto</a>
+      </nav>
+
+      <div class="label desktop-cta">
+        <a href="propuesta.html" class="pill-cta">PROPUESTA ✳</a>
+      </div>
+
+      <button class="label menu-toggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    </div>
+
+    <div class="mobile-menu">
+      <nav class="mobile-nav-list">
+        <a href="proyectos.html" class="display animate-rise mobile-nav-link" style="animation-delay: 0ms">Proyectos</a>
+        <a href="servicios.html" class="display animate-rise mobile-nav-link"
+          style="animation-delay: 70ms">Servicios</a>
+        <a href="sobre-mi.html" class="display animate-rise mobile-nav-link" style="animation-delay: 140ms">Sobre mí</a>
+        <a href="contacto.html" class="display animate-rise mobile-nav-link" style="animation-delay: 210ms">Contacto</a>
+        <a href="propuesta.html" class="display animate-rise mobile-nav-link"
+          style="animation-delay: 280ms">Propuesta</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <main>
+    <div class="container page-wrapper">
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="label text-muted">Sobre mí</p>
+          <h1 class="display page-giant-title">Hola, soy <em>*.</em></h1>
+
+          <div class="reveal about-bio">
+            <p style="margin: 0">
+              Soy community manager, especialista en marketing y productora audiovisual. Trabajo con marcas que
+              tienen algo valioso que decir pero todavía no encuentran la forma correcta de mostrarlo.
+            </p>
+            <p style="margin: 0">
+              Mi método es simple: escuchar, ordenar y producir. Estrategia clara, comunidad cuidada e imágenes con
+              alma de cine. Como el servicio de un buen hotel: no se nota el esfuerzo, solo la experiencia.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <img src="assets/CRAZY-hero.jpg" alt="Retrato de CRAZY" width="1200" height="1600"
+            class="photo about-portrait" />
+          <div class="seal about-seal">
+            <svg viewBox="0 0 200 200">
+              <defs>
+                <path id="seal-circle-about" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" />
+              </defs>
+              <text>
+                <textPath href="#seal-circle-about">
+                  Escuchar · Ordenar · Producir · Escuchar · Ordenar · Producir ·
+                </textPath>
+              </text>
+            </svg>
+            <span class="seal-center">*</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Línea de tiempo (Trayectoria) -->
+      <section class="timeline-section">
+        <p class="label text-muted" style="margin-bottom: 2rem">Trayectoria</p>
+
+        <div class="reveal timeline-row" style="transition-delay: 0ms">
+          <span class="display timeline-year">2019</span>
+          <span class="timeline-text">Primeros proyectos de contenido para marcas locales</span>
+        </div>
+
+        <div class="reveal timeline-row" style="transition-delay: 80ms">
+          <span class="display timeline-year">2021</span>
+          <span class="timeline-text">Producción audiovisual para moda y gastronomía</span>
+        </div>
+
+        <div class="reveal timeline-row" style="transition-delay: 160ms">
+          <span class="display timeline-year">2023</span>
+          <span class="timeline-text">Estudio propio: estrategia + comunidad + cámara</span>
+        </div>
+
+        <div class="reveal timeline-row" style="transition-delay: 240ms">
+          <span class="display timeline-year">2026</span>
+          <span class="timeline-text">Trabajando con marcas en todo el mundo</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ================= PIE DE PÁGINA ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="label footer-kicker">¿Lista tu reservación?</p>
+      <a href="contacto.html" class="display footer-giant-link">
+        Hablemos <span class="footer-arrow">→</span>
+      </a>
+
+      <div class="label footer-bottom">
+        <a href="mailto:hola@CRAZY.studio" class="link-line" style="width: fit-content">(CORREO)</a>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer" class="link-line" style="width: fit-content">
+          Instagram
+        </a>
+        <a href="https://wa.me/" target="_blank" rel="noreferrer" class="link-line" style="width: fit-content">
+          WhatsApp
+        </a>
+        <span class="footer-copy">© 2026 STUDIO</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
