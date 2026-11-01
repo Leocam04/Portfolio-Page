@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Propuesta a medida — *</title>
+  <meta name="description" content="Describe tu proyecto y recibe al instante una propuesta inicial de * a medida." />
+  <meta property="og:title" content="Propuesta a medida — *" />
+  <meta property="og:description" content="Tu propuesta de contenido, marketing o producción en segundos." />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ================= CABECERA ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">(nombre)</a>
+
+      <nav class="label desktop-nav" aria-label="Navegación principal">
+        <a href="proyectos.html" class="link-line">Proyectos</a>
+        <a href="servicios.html" class="link-line">Servicios</a>
+        <a href="sobre-mi.html" class="link-line">Sobre mí</a>
+        <a href="contacto.html" class="link-line">Contacto</a>
+      </nav>
+
+      <div class="label desktop-cta">
+        <a href="propuesta.html" class="pill-cta">PROPUESTA ✳</a>
+      </div>
+
+
+    </div>
+
+    <div class="mobile-menu">
+      <nav class="mobile-nav-list">
+        <a href="proyectos.html" class="display animate-rise mobile-nav-link" style="animation-delay: 0ms">Proyectos</a>
+        <a href="servicios.html" class="display animate-rise mobile-nav-link"
+          style="animation-delay: 70ms">Servicios</a>
+        <a href="sobre-mi.html" class="display animate-rise mobile-nav-link" style="animation-delay: 140ms">Sobre mí</a>
+        <a href="contacto.html" class="display animate-rise mobile-nav-link" style="animation-delay: 210ms">Contacto</a>
+        <a href="propuesta.html" class="display animate-rise mobile-nav-link"
+          style="animation-delay: 280ms">Propuesta</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <main>
+    <div class="container page-wrapper">
+      <p class="label text-muted">Concierge · Propuesta interactiva</p>
+      <h1 class="display page-giant-title" style="font-size: 5.5vw">Tu propuesta, <em>a medida.</em></h1>
+
+      <div class="proposal-grid">
+        <!-- Formulario -->
+        <form id="proposal-form" class="proposal-form">
+          <div class="form-field">
+            <label for="nombre" class="label">Tu nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Opcional" class="form-input" />
+          </div>
+
+          <div class="form-field">
+            <label for="marca" class="label">Marca o proyecto *</label>
+            <input id="marca" name="marca" type="text" required placeholder="Ej: marca de joyería artesanal"
+              class="form-input" />
+          </div>
+
+          <div class="form-field">
+            <label for="objetivo" class="label">¿Qué quieres lograr? *</label>
+            <textarea id="objetivo" name="objetivo" required minlength="10" rows="5"
+              placeholder="Ej: lanzar mi nueva colección en Instagram y conseguir más ventas online…"
+              class="form-textarea"></textarea>
+          </div>
+
+          <div class="form-field">
+            <span class="label">Servicios de interés</span>
+            <div class="chips-wrap">
+              <button type="button" class="label chip-btn" data-service="Community management" aria-pressed="false">
+                Community management
+              </button>
+              <button type="button" class="label chip-btn" data-service="Marketing digital" aria-pressed="false">
+                Marketing digital
+              </button>
+              <button type="button" class="label chip-btn" data-service="Producción audiovisual" aria-pressed="false">
+                Producción audiovisual
+              </button>
+              <button type="button" class="label chip-btn" data-service="Asesoría 1:1" aria-pressed="false">
+                Asesoría 1:1
+              </button>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="presupuesto" class="label">Presupuesto aproximado</label>
+            <input id="presupuesto" name="presupuesto" type="text" placeholder="Opcional · Ej: 500 USD / mes"
+              class="form-input" />
+          </div>
+
+          <div class="btn-group">
+            <button id="proposal-submit" type="submit" class="btn btn-primary">Generar propuesta ✳</button>
+            <button id="proposal-stop" type="button" class="btn btn-outline" style="display: none">Detener</button>
+          </div>
+        </form>
+
+        <!-- Resultado de la propuesta -->
+        <div id="proposal-result-col" class="proposal-result-col">
+          <div class="proposal-card">
+            <div class="label meta-row text-muted" style="margin-bottom: 2.5rem">
+              <span id="proposal-year">Propuesta Nº 2026-S</span>
+              <span id="proposal-status">En espera</span>
+            </div>
+
+            <div id="proposal-empty" class="proposal-empty">
+              <p class="display italic" style="font-size: 3rem">Bienvenida.</p>
+              <p class="text-muted" style="margin-top: 1rem; max-width: 24rem">
+                Completa el formulario y tu propuesta aparecerá aquí, escrita al instante.
+              </p>
+            </div>
+
+            <div id="proposal-output" class="proposal-output" style="display: none"></div>
+
+            <div id="proposal-actions" class="proposal-actions" style="display: none">
+              <a id="proposal-mailto" href="mailto:hola@*.studio" data-email="hola@*.studio" class="btn btn-primary">
+                Enviar a *
+              </a>
+              <a href="contacto.html" class="btn btn-outline">Agendar 1:1</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= PIE DE PÁGINA ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="label footer-kicker">¿Lista tu reservación?</p>
+      <a href="contacto.html" class="display footer-giant-link">
+        Hablemos <span class="footer-arrow">→</span>
+      </a>
+
+      <div class="label footer-bottom">
+        <a href="mailto:hola@*.studio" class="link-line" style="width: fit-content">(CORREO)</a>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer" class="link-line" style="width: fit-content">
+          Instagram
+        </a>
+        <a href="https://wa.me/" target="_blank" rel="noreferrer" class="link-line" style="width: fit-content">
+          WhatsApp
+        </a>
+        <span class="footer-copy">© 2026 STUDIO</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

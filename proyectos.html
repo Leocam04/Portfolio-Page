@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyectos — Sara</title>
+    <meta name="description" content="Campañas, contenido y producciones audiovisuales dirigidas por Sara." />
+    <meta property="og:title" content="Proyectos — Sara" />
+    <meta property="og:description" content="Una selección de campañas, contenido y producciones audiovisuales." />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ================= CABECERA ================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-logo">(nombre)</a>
+
+        <nav class="label desktop-nav" aria-label="Navegación principal">
+          <a href="proyectos.html" class="link-line active">Proyectos</a>
+          <a href="servicios.html" class="link-line">Servicios</a>
+          <a href="sobre-mi.html" class="link-line">Sobre mí</a>
+          <a href="contacto.html" class="link-line">Contacto</a>
+        </nav>
+
+        <div class="label desktop-cta">
+          <a href="propuesta.html" class="pill-cta">PROPUESTA ✳</a>
+        </div>
+
+        <button class="label menu-toggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+      </div>
+
+      <div class="mobile-menu">
+        <nav class="mobile-nav-list">
+          <a href="proyectos.html" class="display animate-rise mobile-nav-link" style="animation-delay: 0ms">Proyectos</a>
+          <a href="servicios.html" class="display animate-rise mobile-nav-link" style="animation-delay: 70ms">Servicios</a>
+          <a href="sobre-mi.html" class="display animate-rise mobile-nav-link" style="animation-delay: 140ms">Sobre mí</a>
+          <a href="contacto.html" class="display animate-rise mobile-nav-link" style="animation-delay: 210ms">Contacto</a>
+          <a href="propuesta.html" class="display animate-rise mobile-nav-link" style="animation-delay: 280ms">Propuesta</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main>
+      <div class="container page-wrapper">
+        <div class="label meta-row text-muted">
+          <span>Índice</span>
+          <span>04 proyectos</span>
+        </div>
+
+        <h1 class="display page-giant-title">Archivo<span class="italic">.</span></h1>
+
+        <!-- ESCRITORIO: Lista interactiva con imagen flotante que sigue el cursor -->
+        <ul id="projects-hover-list" class="projects-hover-list">
+          <li class="project-row" data-image="assets/proyecto-1.jpg">
+            <span class="label project-row-code">IMG-001</span>
+            <span class="display project-row-title">nombre</span>
+            <span class="project-row-summary">
+              Fashion film y piezas verticales para el lanzamiento de la colección de otoño.
+            </span>
+            <span class="label project-row-meta">
+              TIPO · CAMPAÑA<br />(AÑO)
+            </span>
+          </li>
+
+          <li class="project-row" data-image="assets/proyecto-2.jpg">
+            <span class="label project-row-code">IMG-002</span>
+            <span class="display project-row-title">nombre</span>
+            <span class="project-row-summary">
+              Sistema de contenido para Instagram y TikTok con foco en lujo silencioso.
+            </span>
+            <span class="label project-row-meta">
+              TIPO · PRODUCTO<br />(AÑO)
+            </span>
+          </li>
+
+          <li class="project-row" data-image="assets/proyecto-3.jpg">
+            <span class="label project-row-code">IMG-003</span>
+            <span class="display project-row-title">nombre</span>
+            <span class="project-row-summary">
+              Estrategia, calendario y gestión de comunidad: +240% de alcance en seis meses.
+            </span>
+            <span class="label project-row-meta">
+              Creadores · Estrategia<br />(AÑO)
+            </span>
+          </li>
+
+          <li class="project-row" data-image="assets/proyecto-4.jpg">
+            <span class="label project-row-code">IMG-004-0307</span>
+            <span class="display project-row-title">Casa Olivo</span>
+            <span class="project-row-summary">
+              Campaña de reapertura: video de marca, fotografía y pauta digital.
+            </span>
+            <span class="label project-row-meta">
+              Gastronomía · Marca<br />2024
+            </span>
+          </li>
+
+          <!-- Contenedor de la imagen flotante -->
+          <div id="floating-preview" class="floating-preview">
+            <img id="floating-preview-img" src="assets/proyecto-1.jpg" alt="" class="photo project-card-img" />
+          </div>
+        </ul>
+
+        <!-- MÓVIL: Tarjetas apiladas -->
+        <div class="projects-mobile-list">
+          <article class="reveal">
+            <img
+              src="assets/proyecto-1.jpg"
+              alt="Proyecto 1"
+              loading="lazy"
+              width="1008"
+              height="1312"
+              class="photo project-card-img"
+            />
+            <div class="label meta-row text-muted" style="margin-top: 0.75rem">
+              <span>IMG-001</span>
+              <span>(AÑO)</span>
+            </div>
+            <h2 class="display" style="margin-top: 0.5rem; font-size: 3rem">nombre</h2>
+            <p style="margin-top: 0.5rem">
+              Fashion film y piezas verticales para el lanzamiento de la colección de otoño.
+            </p>
+            <p class="label" style="margin-top: 0.75rem">Producción audiovisual · Dirección</p>
+          </article>
+
+          <article class="reveal">
+            <img
+              src="assets/proyecto-2.jpg"
+              alt="Proyecto 2"
+              loading="lazy"
+              width="1008"
+              height="1312"
+              class="photo project-card-img"
+            />
+            <div class="label meta-row text-muted" style="margin-top: 0.75rem">
+              <span>IMG-002</span>
+              <span>(AÑO)</span>
+            </div>
+            <h2 class="display" style="margin-top: 0.5rem; font-size: 3rem">nombre</h2>
+            <p style="margin-top: 0.5rem">
+              Sistema de contenido para Instagram y TikTok con foco en lujo silencioso.
+            </p>
+            <p class="label" style="margin-top: 0.75rem">Contenido · Redes</p>
+          </article>
+
+          <article class="reveal">
+            <img
+              src="assets/proyecto-3.jpg"
+              alt="Proyecto 3"
+              loading="lazy"
+              width="1008"
+              height="1312"
+              class="photo project-card-img"
+            />
+            <div class="label meta-row text-muted" style="margin-top: 0.75rem">
+              <span>IMG-003</span>
+              <span>(AÑO)</span>
+            </div>
+            <h2 class="display" style="margin-top: 0.5rem; font-size: 3rem">nombre</h2>
+            <p style="margin-top: 0.5rem">
+              Estrategia, calendario y gestión de comunidad: +240% de alcance en seis meses.
+            </p>
+            <p class="label" style="margin-top: 0.75rem">Community management · Marketing</p>
+          </article>
+
+          <article class="reveal">
+            <img
+              src="assets/proyecto-4.jpg"
+              alt="Casa Olivo"
+              loading="lazy"
+              width="1008"
+              height="1312"
+              class="photo project-card-img"
+            />
+            <div class="label meta-row text-muted" style="margin-top: 0.75rem">
+              <span>IMG-004-0307</span>
+              <span>2024</span>
+            </div>
+            <h2 class="display" style="margin-top: 0.5rem; font-size: 3rem">Casa Olivo</h2>
+            <p style="margin-top: 0.5rem">
+              Campaña de reapertura: video de marca, fotografía y pauta digital.
+            </p>
+            <p class="label" style="margin-top: 0.75rem">Producción audiovisual · Marketing</p>
+          </article>
+        </div>
+
+        <!-- GALERÍA VISUAL INFERIOR (ESCRITORIO) -->
+        <div class="projects-gallery">
+          <div class="reveal" style="transition-delay: 0ms">
+            <div class="photo-zoom-wrap">
+              <img
+                src="assets/proyecto-1.jpg"
+                alt="Proyecto 1"
+                loading="lazy"
+                width="1008"
+                height="1312"
+                class="photo project-card-img"
+              />
+            </div>
+            <p class="label" style="margin-top: 0.75rem">Producción audiovisual · Dirección</p>
+          </div>
+
+          <div class="reveal projects-gallery-offset" style="transition-delay: 100ms">
+            <div class="photo-zoom-wrap">
+              <img
+                src="assets/proyecto-2.jpg"
+                alt="Proyecto 2"
+                loading="lazy"
+                width="1008"
+                height="1312"
+                class="photo project-card-img"
+              />
+            </div>
+            <p class="label" style="margin-top: 0.75rem">Contenido · Redes</p>
+          </div>
+
+          <div class="reveal" style="transition-delay: 200ms">
+            <div class="photo-zoom-wrap">
+              <img
+                src="assets/proyecto-3.jpg"
+                alt="Proyecto 3"
+                loading="lazy"
+                width="1008"
+                height="1312"
+                class="photo project-card-img"
+              />
+            </div>
+            <p class="label" style="margin-top: 0.75rem">Community management · Marketing</p>
+          </div>
+
+          <div class="reveal projects-gallery-offset" style="transition-delay: 300ms">
+            <div class="photo-zoom-wrap">
+              <img
+                src="assets/proyecto-4.jpg"
+                alt="Casa Olivo"
+                loading="lazy"
+                width="1008"
+                height="1312"
+                class="photo project-card-img"
+              />
+            </div>
+            <p class="label" style="margin-top: 0.75rem">Producción audiovisual · Marketing</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="label footer-kicker">¿Lista tu reservación?</p>
+        <a href="contacto.html" class="display footer-giant-link">
+          Hablemos <span class="footer-arrow">→</span>
+        </a>
+
+        <div class="label footer-bottom">
+          <a href="mailto:hola@sara.studio" class="link-line" style="width: fit-content">(CORREO)</a>
+          <a href="https://instagram.com/" target="_blank" rel="noreferrer" class="link-line" style="width: fit-content">
+            Instagram
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noreferrer" class="link-line" style="width: fit-content">
+            WhatsApp
+          </a>
+          <span class="footer-copy">© 2026 STUDIO</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
